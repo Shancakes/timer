@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Timer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <canvas id="c"></canvas>
+    <div class="timer">
+        <h1>Countdown Timer</h1>
+        <div class="display">
+            <p id="timer">00:00:00:000</p>
+        </div>
+
+        <div class="setTimer">
+            <input type="number" id="hoursInput" placeholder="Hours" min="0">
+            <input type="number" id="minutesInput" placeholder="Minutes" min="0">
+            <input type="number" id="secondsInput" placeholder="Seconds" min="0">
+        </div>
+        <div class="controls">
+            <button id="startButton">Start</button>
+            <button id="pauseButton">Pause</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p>Time's Up!</p>
+            <button id="modalStopButton">OK</button>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
